@@ -4,6 +4,7 @@ metadata:
   name: emp-springboot-config
   namespace: abhijeet
 data:
-  SPRING_DATASOURCE_URL: jdbc:mysql://emp-mysql-service:3306/ems
-  SPRING_DATASOURCE_USERNAME: root
-  SPRING_DATASOURCE_PASSWORD: Cybage@123
+  SPRING_DATASOURCE_URL: amRiYzpteXNxbDovL2VtcC1teXNxbC1zZXJ2aWNlOjMzMDYvZW1z #jdbc:mysql://emp-mysql-service:3306/ems
+  SPRING_DATASOURCE_USERNAME: cm9vdA== #root
+  SPRING_DATASOURCE_PASSWORD: Q3liYWdlQDEyMw== #Cybage@123
+
