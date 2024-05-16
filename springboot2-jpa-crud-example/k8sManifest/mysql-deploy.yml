@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emp-mysql-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: emp-mysql-app
+  template:
+    metadata:
+      labels:
+        app: emp-mysql-app
+    spec:
+      containers:
+      - name: emp-mysql-cont
+        image: mysql
+        env:
+          - name: MYSQL_ROOT_PASSWORD
+            value: Cybage@123
+          - name: MYSQL_DATABASE
+            value: ems
+        ports:
+        - containerPort: 3306
+

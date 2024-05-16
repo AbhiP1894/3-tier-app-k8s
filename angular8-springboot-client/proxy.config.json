@@ -1,0 +1,7 @@
+{
+    "/springboot-crud-rest/*": {
+      "target": "http://emp-springboot-service:8080",
+      "secure": false,
+      "logLevel": "debug"
+    }
+  }

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: emp-springboot-deployment
+spec: 
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: emp-springboot-app
+  template: 
+    metadata:
+      labels:
+        app: emp-springboot-app
+    spec:
+      containers:
+      - name: emp-springboot-cont
+        image: sohampa/abhijeet-springboot-app:latest
+        ports:
+        - containerPort: 8080
+        env:
+          - name: SPRING_DATASOURCE_URL
+            value: jdbc:mysql://emp-mysql-service:3306/ems
+          - name: SPRING_DATASOURCE_USERNAME
+            value: root
+          - name: SPRING_DATASOURCE_PASSWORD
+            value: Cybage@123
