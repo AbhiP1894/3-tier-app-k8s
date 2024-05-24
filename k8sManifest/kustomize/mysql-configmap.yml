@@ -4,5 +4,5 @@ metadata:
   name: emp-mysql-config
   namespace: abhijeet
 data:
-  MYSQL_ROOT_PASSWORD: Q3liYWdlQDEyMw== # Cybage@123  # Base64 encoded value of "Cybage@123"
-  MYSQL_DATABASE: ZW1z # ems          # Base64 encoded value of "ems"
+  MYSQL_ROOT_PASSWORD: Cybage@123 #Q3liYWdlQDEyMw==   # Base64 encoded value of "Cybage@123"
+  MYSQL_DATABASE: ems    #ZW1z       # Base64 encoded value of "ems"
